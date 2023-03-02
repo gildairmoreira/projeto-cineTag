@@ -9,5 +9,12 @@
     font-weight: 400;
     font-size: 18px;
     color: $branco;
+    a{
+      text-decoration: none;
+      color: $branco;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 }
