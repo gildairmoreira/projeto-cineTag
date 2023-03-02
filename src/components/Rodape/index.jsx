@@ -5,7 +5,7 @@ export default function Rodape() {
   return (
     <footer className={styles.rodape}>
       <h2>
-        Desenvolvido por <a href="https://github.com/gildairmoreira">Gildair</a>
+        Desenvolvido por <a href="https://github.com/gildairmoreira" target={'_blank'}>Gildair</a>
         .
       </h2>
     </footer>
