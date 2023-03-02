@@ -9,7 +9,7 @@ export default function Inicio() {
 
   useEffect(() => {
     fetch(
-      "https://my-json-server.typicode.com/gildairmoreira/cineta-api/videos"
+      "https://my-json-server.typicode.com/gildairmoreira/cinetag-api/videos"
     )
     .then(resposta => resposta.json())
     .then(dado => {
