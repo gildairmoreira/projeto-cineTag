@@ -1,11 +1,22 @@
 import Banner from "components/Banner";
 import Card from "components/Card";
 import Titulo from "components/Titulo";
-import React from "react";
-import videos from "json/db.json";
+import React, { useEffect, useState } from "react";
 import styles from "./Inicio.module.scss";
 
 export default function Inicio() {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://my-json-server.typicode.com/gildairmoreira/cineta-api/videos"
+    )
+    .then(resposta => resposta.json())
+    .then(dado => {
+      setVideos(dado)
+    })
+  }, []);
+  
   return (
     <>
       <Banner imagem="home" />
