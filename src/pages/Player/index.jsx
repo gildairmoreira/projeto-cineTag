@@ -12,8 +12,8 @@ export default function Player() {
      useEffect(() => {
         fetch(`https://my-json-server.typicode.com/gildairmoreira/cinetag-api/videos?id=${parametros.id}`)
             .then((resposta) => resposta.json())
-            .then((dados) => {
-                setVideo(...dados)
+            .then((dado) => {
+                setVideo(...dado)
             })
     }, [parametros.id])
 
