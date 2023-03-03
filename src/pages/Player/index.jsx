@@ -15,7 +15,7 @@ export default function Player() {
             .then((dado) => {
                 setVideo(...dado)
             })
-    }, [parametros.id])
+    }, [])
 
     if (!video) {
         return <NaoEncontrada />
